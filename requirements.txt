@@ -1,0 +1,8 @@
+pandas
+numpy
+faker
+boto3
+python-dotenv
+snowflake-connector-python
+dbt-snowflake
+sqlfluff
