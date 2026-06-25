@@ -1,0 +1,61 @@
+return_id,order_id,product_id,return_date,reason,refund_amount,status,quality_flag
+RET-0001,ORD-02216,PROD-066,2026-03-20,wrong item,119.69,processed,orphan_return
+RET-0029,ORD-00764,PROD-034,2024-09-14,defective,160.14,processed,orphan_return
+RET-0039,ORD-00488,PROD-019,2026-01-20,wrong item,153.39,rejected,orphan_return
+RET-0044,ORD-02930,PROD-031,2025-08-15,damaged,5.54,processed,orphan_return
+RET-0054,ORD-07000,PROD-045,2025-12-02,defective,163.97,processed,orphan_return
+RET-0061,ORD-05592,PROD-084,2025-07-10,damaged,57.46,processed,orphan_return
+RET-0069,ORD-01503,PROD-010,2025-02-28,changed mind,23.12,pending,orphan_return
+RET-0074,ORD-04085,PROD-022,2024-12-14,damaged,154.59,processed,orphan_return
+RET-0092,ORD-04415,PROD-082,2024-11-08,damaged,146.03,processed,orphan_return
+RET-0109,ORD-04862,PROD-057,2020-01-01,not as described,106.1,processed,return_before_order_date
+RET-0120,ORD-05603,PROD-071,2026-03-05,changed mind,169.09,processed,orphan_return
+RET-0123,ORD-06745,PROD-039,2024-11-15,changed mind,84.87,pending,orphan_return
+RET-0132,ORD-00458,PROD-024,2024-09-09,wrong item,60.43,processed,orphan_return
+RET-0141,ORD-06522,PROD-040,2020-01-01,defective,37.22,pending,return_before_order_date
+RET-0142,ORD-06703,PROD-084,2025-03-12,not as described,39.32,processed,orphan_return
+RET-0143,ORD-02989,PROD-052,2026-05-12,not as described,142.45,processed,orphan_return
+RET-0156,ORD-02081,PROD-079,2020-01-01,changed mind,41.3,processed,return_before_order_date
+RET-0157,ORD-06956,PROD-031,2026-03-25,damaged,196.4,processed,orphan_return
+RET-0169,ORD-07701,PROD-074,2026-01-04,damaged,184.94,processed,orphan_return
+RET-0196,ORD-02119,PROD-084,2026-05-14,defective,12.45,processed,orphan_return
+RET-0204,ORD-00928,PROD-055,2024-08-17,changed mind,9.96,processed,orphan_return
+RET-0211,ORD-02967,PROD-031,2025-01-06,defective,81.9,processed,orphan_return
+RET-0214,ORD-03211,PROD-083,2025-01-14,changed mind,67.34,processed,orphan_return
+RET-0220,ORD-00738,PROD-039,2024-10-10,defective,158.23,processed,orphan_return
+RET-0234,ORD-00473,PROD-099,2025-12-16,damaged,111.64,processed,orphan_return
+RET-0249,ORD-07410,PROD-031,2025-12-09,defective,182.7,processed,orphan_return
+RET-0255,ORD-00541,PROD-048,2025-11-22,changed mind,190.77,processed,orphan_return
+RET-0262,ORD-02112,PROD-034,2020-01-01,damaged,192.14,processed,return_before_order_date
+RET-0272,ORD-05224,PROD-070,2024-10-04,damaged,26.08,processed,orphan_return
+RET-0273,ORD-02115,PROD-068,2025-08-10,defective,157.36,processed,orphan_return
+RET-0278,ORD-00454,PROD-072,2025-08-31,not as described,140.23,processed,orphan_return
+RET-0288,ORD-06002,PROD-086,2025-09-12,wrong item,111.82,processed,orphan_return
+RET-0304,ORD-02200,PROD-031,2025-10-19,damaged,19.84,processed,orphan_return
+RET-0312,ORD-04175,PROD-084,2025-07-14,changed mind,128.22,processed,orphan_return
+RET-0317,ORD-05003,PROD-089,2025-01-27,not as described,78.4,processed,orphan_return
+RET-0324,ORD-03704,PROD-066,2025-07-30,defective,84.25,rejected,orphan_return
+RET-0343,ORD-02629,PROD-012,2026-06-06,not as described,123.18,processed,orphan_return
+RET-0348,ORD-07741,PROD-031,2025-04-14,defective,172.0,pending,orphan_return
+RET-0353,ORD-07699,PROD-070,2025-02-06,not as described,162.89,processed,orphan_return
+RET-0355,ORD-05529,PROD-055,2020-01-01,defective,133.61,processed,return_before_order_date
+RET-0364,ORD-07497,PROD-062,2025-04-27,changed mind,79.46,processed,orphan_return
+RET-0365,ORD-02698,PROD-056,2025-11-04,not as described,171.97,processed,orphan_return
+RET-0378,ORD-02267,PROD-084,2025-03-19,defective,33.94,processed,orphan_return
+RET-0395,ORD-02914,PROD-075,2026-06-12,changed mind,22.51,processed,orphan_return
+RET-0436,ORD-06416,PROD-021,2025-06-05,changed mind,10.87,processed,orphan_return
+RET-0438,ORD-02898,PROD-007,2026-02-27,damaged,106.87,processed,orphan_return
+RET-0463,ORD-03833,PROD-079,2026-03-19,wrong item,11.11,processed,orphan_return
+RET-0475,ORD-01570,PROD-100,2025-04-25,damaged,155.84,processed,orphan_return
+RET-0476,ORD-01738,PROD-091,2024-12-12,wrong item,134.57,processed,orphan_return
+RET-0493,ORD-05156,PROD-030,2026-02-07,defective,123.21,processed,orphan_return
+RET-0504,ORD-01616,PROD-024,2024-08-27,damaged,126.27,processed,orphan_return
+RET-0507,ORD-04906,PROD-034,2024-07-17,not as described,28.89,processed,orphan_return
+RET-0515,ORD-04514,PROD-082,2024-10-28,wrong item,169.79,processed,orphan_return
+RET-0521,ORD-04921,PROD-016,2020-01-01,changed mind,171.95,processed,return_before_order_date
+RET-0522,ORD-01222,PROD-049,2024-09-12,defective,182.69,processed,orphan_return
+RET-0525,ORD-00998,PROD-090,2025-03-10,changed mind,12.06,processed,orphan_return
+RET-0546,ORD-02654,PROD-002,2025-08-30,changed mind,188.92,processed,orphan_return
+RET-0590,ORD-05924,PROD-067,2025-08-04,changed mind,121.37,processed,orphan_return
+RET-0620,ORD-00743,PROD-007,2025-08-25,defective,161.78,processed,orphan_return
+RET-0634,ORD-03140,PROD-091,2026-01-01,damaged,35.97,rejected,orphan_return

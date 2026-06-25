@@ -1,0 +1,7 @@
+table_name,total_rows,valid_rows,quarantined_rows,issue_breakdown
+customers,1020,966,54,"{""duplicate"": 53, ""missing_email"": 1}"
+products,100,98,2,"{""missing_price"": 2}"
+stores,15,15,0,{}
+orders,8000,7389,611,"{""invalid_customer_fk"": 387, ""invalid_product_fk"": 144, ""future_date"": 80}"
+payments,8160,7389,771,"{""orphan_payment"": 611, ""duplicate"": 160}"
+returns,640,580,60,"{""orphan_return"": 54, ""return_before_order_date"": 6}"
