@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: int_sales
+    description: "Enriched sales records joining orders, products, and payments with line-level revenue calculation"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: line_revenue
+        description: "Calculated as quantity multiplied by unit_price"
+        tests:
+          - not_null
+
+  - name: int_returns
+    description: "Returns enriched with original order data and return timing metrics"
+    columns:
+      - name: return_id
+        tests:
+          - not_null
+          - unique
+
+  - name: int_customer_metrics
+    description: "Customer-level aggregated metrics: orders, revenue, first/last order dates"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
