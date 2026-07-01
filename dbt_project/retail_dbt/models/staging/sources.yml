@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RETAIL_DB
+    schema: RAW
+    description: "Raw data loaded from S3 clean zone into Snowflake RAW schema"
+
+    tables:
+      - name: customers
+        description: "Customer master data loaded from cleaned S3 CSVs"
+
+      - name: products
+        description: "Product catalog with pricing and category information"
+
+      - name: stores
+        description: "Store location data"
+
+      - name: orders
+        description: "Transactional order data, one row per order line"
+
+      - name: payments
+        description: "Payment records, one row per order"
+
+      - name: returns
+        description: "Return and refund records"
