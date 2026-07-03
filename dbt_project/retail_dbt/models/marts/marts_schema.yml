@@ -1,0 +1,89 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Customer dimension combining customer attributes with lifetime metrics"
+    columns:
+      - name: customer_id
+        description: "Primary key — unique identifier for each customer"
+        tests:
+          - unique
+          - not_null
+      - name: total_orders
+        description: "Total number of paid orders placed by this customer"
+      - name: is_repeat_customer
+        description: "True if the customer has placed more than one order"
+
+  - name: dim_product
+    description: "Product dimension with category and pricing information"
+    columns:
+      - name: product_id
+        description: "Primary key — unique identifier for each product"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_store
+    description: "Store dimension with location data"
+    columns:
+      - name: store_id
+        description: "Primary key — unique identifier for each store"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    description: "Date dimension covering 2020–2027 with calendar attributes"
+    columns:
+      - name: date_id
+        description: "Primary key — the date itself"
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_sales
+    description: "Fact table at order line grain — one row per order with revenue metrics"
+    columns:
+      - name: order_id
+        description: "Primary key — unique identifier for each order"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Foreign key to dim_customer"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+      - name: product_id
+        description: "Foreign key to dim_product"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_product')
+              field: product_id
+      - name: date_id
+        description: "Foreign key to dim_date"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_id
+      - name: line_revenue
+        description: "Revenue for this order line: quantity multiplied by unit_price"
+        tests:
+          - not_null
+
+  - name: fact_returns
+    description: "Fact table at return grain — one row per return with refund metrics"
+    columns:
+      - name: return_id
+        description: "Primary key — unique identifier for each return"
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "Foreign key to fact_sales"
+        tests:
+          - not_null
