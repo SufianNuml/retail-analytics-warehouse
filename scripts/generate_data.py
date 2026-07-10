@@ -367,8 +367,7 @@ def inject_dirty_data(
     )
 
 
-
-if __name__ == "__main__":
+def main():
 
     customers_df = generate_customers()
 
@@ -445,3 +444,7 @@ if __name__ == "__main__":
     print(f"returns   : {len(returns_df)}")
 
     print("\nAll files saved successfully.")
+
+
+if __name__ == "__main__":
+    main()
