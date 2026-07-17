@@ -11,6 +11,7 @@ sales as (
         order_date,
         customer_id,
         product_id,
+        store_id,          -- ← ADD THIS
         product_name,
         category,
         line_revenue
@@ -31,6 +32,7 @@ returns_enriched as (
         s.order_date,
         s.customer_id,
         s.product_id,
+        s.store_id, 
         s.product_name,
         s.category,
         s.line_revenue                                      as original_order_revenue,

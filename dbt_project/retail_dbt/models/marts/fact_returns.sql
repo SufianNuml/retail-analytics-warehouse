@@ -11,6 +11,7 @@ fact as (
         r.order_id,
         r.customer_id,
         r.product_id,
+        r.store_id, 
         r.return_date                                   as date_id,
         r.order_date,
         r.return_reason,
